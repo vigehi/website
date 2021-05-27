@@ -1,0 +1,38 @@
+.theme-review-notice {
+	position: relative;
+}
+
+.theme-review-notice .links {
+	margin: 10px 0;
+}
+
+.theme-review-notice .links a {
+	height: auto;
+	padding: 3px 15px;
+	margin-left: 10px;
+	text-transform: capitalize;
+}
+
+.theme-review-notice .links a .dashicons {
+	line-height: 1.5;
+}
+
+.theme-review-notice .links a.button-primary {
+	margin-left: 0;
+}
+
+.theme-review-notice a.notice-dismiss {
+	text-decoration: none;
+}
+
+#mt-theme-message {
+	position: relative;
+}
+
+.owner-message-close .notice-dismiss {
+	position: absolute;
+}
+
+a.notice-dismiss {
+    text-decoration: none;
+}

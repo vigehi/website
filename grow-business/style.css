@@ -1,0 +1,430 @@
+/*
+Theme Name: Grow Business
+Text Domain: grow-business
+Template: grow
+Version: 1.0.7
+Requires at least: 4.7
+Tested up to: 5.6.0
+Requires PHP: 5.6.0
+Description: Grow Business is the free version of the multi-purpose professional theme (Grow Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout. Compatible with WooCommerce, WPML, Polylang, Flat Parallax Slider, Photo Gallery and Travel Map, Elementor, Page Builder, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. It's a perfect theme for small businesses (restaurants, wedding planners, sport/medical shops), startups, corporate businesses, online agencies and firms, portfolios, ecommerce (WooCommerce), and freelancers.
+Tags: one-column, two-columns, three-columns, right-sidebar, left-sidebar, custom-header, custom-menu, full-width-template, theme-options, threaded-comments, editor-style, featured-images, featured-image-header, post-formats, sticky-post, translation-ready, flexible-header, custom-background, grid-layout, footer-widgets, blog, e-commerce, portfolio, rtl-language-support
+Author: Think Up Themes
+Author URI: https://www.thinkupthemes.com
+Theme URI: https://www.thinkupthemes.com/free/grow/
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*Pre-Header Style */
+.pre-header-style2 #pre-header-search .search {
+	background-color: #fff;
+	color: #7a7a7a;
+	outline: none;
+	font-size: 13px;
+}
+.pre-header-style2 #pre-header-search .fa-search {
+	color: #DDAF4D;
+}
+#pre-header .header-links .sub-menu li {
+	border-bottom: 1px solid #eee;
+}
+#pre-header .header-links .sub-menu li:last-child {
+	border-bottom: none;
+}
+
+/*Header Style */
+.header-style2 #header .header-links > ul > li > a {
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-left: none;
+}
+.header-style2 #header .header-links > ul > li:last-child > a {
+	border-right: none;
+}
+#header .menu > li.menu-hover > a,
+#header .menu > li.current_page_item > a,
+#header .menu > li.current-menu-ancestor > a,
+#header .menu > li > a:hover {
+	-webkit-box-shadow: inset 0 -3px 0 0 #DDAF4D;
+	-moz-box-shadow: inset 0 -3px 0 0 #DDAF4D;
+	-ms-box-shadow: inset 0 -3px 0 0 #DDAF4D;
+	-o-box-shadow: inset 0 -3px 0 0 #DDAF4D;
+	box-shadow: inset 0 -3px 0 0 #DDAF4D;
+}
+.header-style2 #header #header-search .search {
+	outline: none
+}
+.header-style2 #header #header-search .fa-search {
+	color: #DDAF4D;
+}
+.header-style2 #header .header-links .sub-menu a {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+#header .header-links .sub-menu {
+	background-color: #333;
+}
+#header .sub-menu li {
+	border-bottom: 1px solid #444;
+}
+#header .sub-menu li:last-child {
+	border-bottom: none;
+}
+
+/*Slider Style */
+#slider {
+	border-bottom: 3px solid #DDAF4D;
+}
+#slider .rslides_tabs li a {
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+/* Call To Action Style */
+#introaction {
+	border-bottom: 3px solid #DDAF4D;
+}
+.action-text h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.action-link a {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	display: inline-block;
+	padding: 7px 20px;
+	color: #7a7a7a;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Featured Style */
+.services-builder.style1 {
+	background-color: #f7f7f7;
+	padding: 30px 20px;
+	border-bottom: 3px solid #DDAF4D;
+}
+.services-builder.style1 .iconimage i.fa-inverse {
+	background-color: #fff;
+	color: #DDAF4D;
+}
+.services-builder.style1 .iconimage a:hover i {
+	color: #fff !important;
+	background-color: #DDAF4D !important;
+}
+.services-builder .iconmain h3 {
+	font-size: 17px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.services-builder.style1 .iconmain .iconurl a {
+	background-color: #DDAF4D;
+	color: #fff;
+	padding: 5px 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-top: 10px;
+	font-size: 13px;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.services-builder.style1 .iconmain .iconurl a:hover {
+	opacity: 0.9;
+}
+
+/* Blog Post Style */
+.blog-article {
+	border-bottom: 3px solid #f4f4f4;
+}
+.image-overlay .image-overlay-inner .hover-zoom,
+.image-overlay .image-overlay-inner .hover-link {
+	background: #DDAF4D!important;
+	border: 1px solid #DDAF4D;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.image-overlay .image-overlay-inner .hover-zoom:hover,
+.image-overlay .image-overlay-inner .hover-link:hover {
+	border: 1px solid #DDAF4D !important;
+}
+.blog-style1-layout2 .blog-thumb {
+	border-bottom: 3px solid #DDAF4D;
+}
+.blog-article .blog-title {
+	font-size: 19px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.blog-article .entry-meta:after {
+	display: none;
+}
+.blog-article .entry-meta {
+	color: #DDAF4D;
+	border-bottom: 1px solid #eee;
+}
+.blog-article .more-link a {
+	background-color: #DDAF4D;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	padding: 7px 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.blog-article .more-link a:hover {
+	opacity: 0.9;
+}
+.blog-article.format-nomedia {
+	border-top: 3px solid #DDAF4D;
+	padding-top: 15px;
+}
+.blog-article.sticky {
+	background: #fff;
+	padding: 0px;
+}
+.blog-article.sticky .entry-content {
+	background: #fff;
+	padding: 15px 0px 0px 0px;
+}
+
+/* Sidebar Style */
+.widget_search form {
+	background-color: #f7f7f7;
+	padding: 20px;
+}
+#sidebar-core .widget_search {
+	padding-bottom: 40px !important;
+}
+#sidebar-core .widget {
+	border-bottom: 3px solid #f4f4f4;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+#sidebar h3.widget-title {
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 12px;
+}
+.widget li.recentcomments {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+.widget li {
+	font-size: 13px;
+	border-bottom: 1px dotted #eee;
+	display: inline-block;
+	width: 100%;
+}
+.widget li:last-child {
+	border-bottom: none;
+}
+#sidebar .widget_tag_cloud a {
+	color: #7a7a7a;
+	text-transform: capitalize;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+#sidebar .widget_tag_cloud a:hover {
+	color: #fff;
+	background-color: #DDAF4D;
+}
+
+/* Pagination Style */
+.navigation.pagination .nav-links a {
+	color: #7a7a7a;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+.navigation.pagination .nav-links span.current {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Intro Style */
+#intro {
+	background: #f9f9f9;
+	border-bottom: 1px solid #e9e9e9;
+}
+#intro.option2 .page-title {
+	color: #232323;
+}
+#intro #breadcrumbs {
+	padding: 40px 0px;
+	color: #232323;
+	font-size: 13px;
+}
+
+/* Single Post Style */
+.single .post-title {
+	font-size: 21px;
+	text-transform: capitalize;
+}
+.single .entry-meta:after {
+	display: none;
+}
+.single .entry-meta {
+	color: #DDAF4D;
+	border-bottom: 1px solid #eee;
+}
+input[type="submit"] {
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	padding: 7px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+input[type=password] {
+	outline: none;
+	height: 37px;
+}
+
+/* Single Post Navigation Style */
+.nav-previous a, 
+.nav-next a {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #7a7a7a;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Comments Style */
+#comments-title {
+	border-top: 3px solid #f4f4f4;
+}
+#comments-title h3 {
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+}
+.comment-author a {
+	font-size: 15px;
+	font-weight: 700;
+}
+.comment-meta a {
+	color: #DDAF4D;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+/* Leave Comment Style */
+.comment-respond {
+	border-top: 3px solid #f4f4f4;
+	padding-top: 40px;	
+}
+#reply-title {
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid #eee;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+}
+#respond p {
+	font-size: 13px;
+}
+#commentform #comment {
+	outline: none;
+}
+#commentform input[type="submit"] {
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: #7a7a7a;
+	padding: 7px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+#commentform input[type="submit"]:hover {
+	color: #fff;
+}
+
+/* Footer Style */
+#footer {
+	border-top: 3px solid #DDAF4D;
+}
+#footer-core h3 {
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid #333;
+	display: inline-block;
+	width: 100%;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+}
+#gallery-1 .gallery-item {
+	margin-right: 3%;
+	margin-bottom: 3%;
+	margin-top: 0px;
+	width: 30%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+#footer .widget li {
+	border-bottom: 1px dotted #333;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+#footer .widget li:last-child {
+	border-bottom: none;
+}
+#footer .widget_search .search {
+	outline: none;
+	background-color: #333;
+	border: 1px solid #444;
+}

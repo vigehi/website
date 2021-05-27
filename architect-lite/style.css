@@ -1,0 +1,538 @@
+/*
+ Theme Name:   Architect Lite
+ Theme URI:    https://mysterythemes.com/wp-themes/architect/
+ Description:  Architect Lite is a child theme of Owner WordPress Theme. Architect Lite is free Multipurpose Construction WordPress Theme suitable for construction or any business building websites. Besides, it is elegantly designed for multipurpose like business, corporates, eCommerce, personal or other creative websites. It is very flexible and provided with convenient features and options for your business. Get free support at https://mysterythemes.com/support/forum/themes/child-themes/ and check the demo at http://demo.mysterythemes.com/child-theme/architect
+ Author:       Mystery Themes
+ Author URI:   https://mysterythemes.com/
+ Template:     owner
+ Version:      1.0.3
+ Requires at least: 4.5
+ Requires PHP : 5.6
+ License:      GNU General Public License v3 or later
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         one-column, two-columns, left-sidebar, right-sidebar, custom-colors, featured-images, translation-ready, blog, education, portfolio
+ Text Domain:  architect-lite
+*/
+
+/*--------------------------------------------------------------
+Header CSS
+--------------------------------------------------------------*/
+.top-header-holder {
+	background: #F9AB03;
+}
+
+.top-left-holder .top-info,
+.social-icons-holder a{
+	color: #fff;
+}
+
+.social-icons-holder a:hover{
+	color: #333;
+}
+
+.logo-ads-wrapper {
+	padding: 15px 0;
+}
+
+/*--------------------------------------------------------------
+Sider CSS
+--------------------------------------------------------------*/
+
+.single-slide {
+	text-align: center;
+}
+
+.slider-title-desc-wrap {
+	width: 750px;
+	background: rgba(0,0,0,0.5);
+	padding: 30px 20px;
+	text-align: left;
+}
+
+.owner-slider-wrapper .slide-title::after, 
+.owner-slider-wrapper .slide-title::before{
+	display: none;
+}
+
+.owner-slider-wrapper .slide-title {
+	font-size: 32px;
+	text-transform: uppercase;
+	line-height: 52px;
+}
+
+.slide-content {
+	font-size: 16px;
+	margin: 20px 0 0;
+}
+
+.mt-slider-btn-wrap{
+	margin-top: 10px;
+}
+
+.slider-overlay {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------
+Menu CSS
+--------------------------------------------------------------*/
+
+#site-navigation ul li a {
+	padding: 0 25px;
+	position: relative;
+}
+
+#site-navigation ul li:last-child > a {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.header-search-wrapper .search-main {
+	margin-left: 40px;
+}
+
+#site-navigation ul li a {
+	padding: 0;
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin: 0 20px;
+}
+
+#site-navigation ul li > a::before {
+	width: 0;
+	height: 3px;
+	background: #F9AB03;
+	opacity: 0;
+	visibility: hidden;
+	content: "";
+	position: absolute;
+	bottom: 10px;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+#site-navigation ul li.current-menu-item > a:before, 
+#site-navigation ul li:hover > a:before{
+	width:50%;
+	visibility: visible;
+	opacity: 1;
+}
+
+#site-navigation ul li.menu-item-has-children a, 
+#site-navigation ul li.page_item_has_children a {
+	padding-right: 15px;
+	margin-right: 20px;
+}
+
+#site-navigation li.menu-item-has-children > a::after, 
+#site-navigation li.page_item_has_children > a::after {
+	right: 0;
+	top: 0;
+}
+
+#site-navigation ul ul li > a::before{
+	display: none;
+}
+/*--------------------------------------------------------------
+Grid & CTA CSS
+--------------------------------------------------------------*/
+
+.section-wrapper {
+	padding: 80px 0 80px;
+}
+
+.section-title-wrapper {
+	margin-bottom: 30px;
+}
+
+.owner_grid_layout .img-holder {
+	margin-bottom: 15px;
+}
+
+.owner_call_to_action .section-wrapper::before,
+.owner_testimonials .section-wrapper::before {
+	background: rgba(249,171,3,0.8);
+}
+
+.cta-content {
+	font-size: 34px;
+}
+
+.cta-content-wrapper .cta-btn-wrap a,
+.cta-content-wrapper .cta-btn-wrap a:hover{
+	background: #333;
+	border-color: #333;
+}
+
+.cta-btn-wrap a:hover{
+	border-radius: 30px;
+}
+
+/*--------------------------------------------------------------
+Portfolio CSS
+--------------------------------------------------------------*/
+
+.owner_portfolio .single-post-wrapper .portfolio-title-wrapper {
+	bottom: auto;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: rgba(249,171,3,0.8);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	text-align: center;
+	padding: 25px 0 10px;
+}
+.owner_portfolio .single-post-wrapper:hover .portfolio-title-wrapper {
+	left: 0;
+}
+
+.owner_portfolio .single-post-wrapper .portfolio-title-wrapper .post-title {
+	position: absolute;
+	left: 30px;
+	bottom: 50px;
+	font-size: 26px;
+	color: #fff;
+}
+
+.widget.owner_portfolio .single-post-wrapper .portfolio-title-wrapper .portfolio-link {
+	top: 0;
+	right: 0;
+	left: auto;
+	background: #333;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	line-height: 50px;
+}
+
+.widget.owner_portfolio .single-post-wrapper .portfolio-title-wrapper .portfolio-link:hover {
+	border-radius: 0 0 0 20px;
+	background: #333;
+}
+
+/*--------------------------------------------------------------
+About & Team CSS
+--------------------------------------------------------------*/
+
+.team-wrapper .team-desc {
+	padding: 0 30px;
+	display: table;
+}
+
+.team-wrapper .team-desc p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.architect_lite_about_us .section-content-wrapper {
+	float: left;
+	width: 55%;
+}
+
+.architect_lite_about_us .section-image-holder {
+	float: right;
+	width: 40%;
+}
+
+.widget.architect_lite_about_us .widget-title {
+	margin-bottom: 40px;
+	border: none;
+	padding: 0;
+	font-size: 36px;
+}
+
+.widget.architect_lite_about_us .section-content {
+	font-size: 14px;
+}
+
+.widget.architect_lite_about_us .section-wrapper{
+	padding-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+Testimonial CSS
+--------------------------------------------------------------*/
+
+.owner_testimonials .single-post-wrapper {
+	background: #fff;
+	text-align: left;
+}
+
+.owner_testimonials .single-post-wrapper .img-holder {
+	border: none;
+	border-radius: 0;
+	float: left;
+	width: 25%;
+	margin: 0;
+}
+
+.testimonial-content {
+	padding: 30px 40px 0 60px;
+	color: #333;
+	text-align: left;
+	float: left;
+	width: 75%;
+}
+
+.testimonial-content::before {
+	left: 30px;
+	top: 20px;
+}
+
+.owner_testimonials .client-name {
+	display: inline-block;
+	padding-left: 60px;
+}
+
+.owner_testimonials .client-position {
+	display: none;
+}
+
+.owner_testimonials .single-post-wrapper::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.owner_testimonials .lSSlideOuter .lSPager.lSpg {
+	margin-top: 0 !important;
+	position: absolute;
+	bottom: 30px;
+	right: 40px;
+}
+
+.owner_testimonials  .lSSlideOuter .lSPager.lSpg > li a{
+	background: #333;
+}
+
+/*--------------------------------------------------------------
+Footer CSS
+--------------------------------------------------------------*/
+
+#colophon {
+	background: #212121;
+}
+
+.site-info {
+	background: rgba(0,0,0,0.3);
+}
+
+#colophon .widget .widget-title {
+	background: no-repeat;
+	color: #fff;
+}
+
+#top-footer,
+#top-footer .widget_archive a,
+#top-footer .widget_categories a,
+#top-footer .widget_recent_entries a,
+#top-footer .widget_meta a,
+#top-footer .widget_recent_comments li,
+#top-footer .widget_rss li,
+#top-footer .widget_pages li a,
+#top-footer .widget_nav_menu li a,
+.site-info a,
+.site-info{
+	color: #ececec;
+}
+
+#top-footer .widget_archive a:hover,
+#top-footer .widget_categories a:hover,
+#top-footer .widget_recent_entries a:hover,
+#top-footer .widget_meta a:hover,
+#top-footer .widget_recent_comments li,
+#top-footer .widget_rss li,
+#top-footer .widget_pages li a:hover,
+#top-footer .widget_nav_menu li a:hover,
+.site-info a:hover{
+	color: #F9AB03;
+}
+
+#top-footer .widget_archive li,
+#top-footer .widget_categories li,
+#top-footer .widget_recent_entries li,
+#top-footer .widget_meta li,
+#top-footer .widget_recent_comments li,
+#top-footer .widget_rss li,
+#top-footer .widget_pages li,
+#top-footer .widget_nav_menu li{
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/*--------------------------------------------------------------
+Design Tweaks On Child CSS
+--------------------------------------------------------------*/
+#respond,
+.comment-list .comment-body {
+	background: #f9f9f9;
+}
+
+.single .entry-meta {
+	margin-bottom: 20px;
+}
+
+.reply .comment-reply-link {
+	padding: 8px 10px;
+	margin-left: 50px;
+	font-size: 14px;
+	display: inline-block;
+}
+
+.social-icons-holder a:hover {
+	color: #fff;
+}
+
+body, button, input, select, textarea {
+	font-size: 15px;
+}
+
+.navigation.post-navigation::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-links .nav-next a, 
+.nav-links .nav-previous a {
+	height: 46px;
+	line-height: 22px;
+}
+
+#comments {
+	margin-top: 40px;
+}
+/*--------------------------------------------------------------
+Responsive CSS
+--------------------------------------------------------------*/
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 769px) and (max-width: 979px) {
+}
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+	.slider-title-desc-wrap {
+		width: 70%;
+		padding: 10px 10px;
+	}
+	.owner-slider-wrapper .slide-title {
+		font-size: 28px;
+		line-height: 42px;
+	}
+	.slide-content > p {
+		display: none;
+	}
+	.header-search-wrapper .search-main {
+		margin-left: 15px;
+	}
+	#site-navigation ul li.current-menu-item > a::before, 
+	#site-navigation ul li:hover > a::before{
+		display: none;
+	}
+	.architect_lite_about_us .section-image-holder {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	.architect_lite_about_us .section-content-wrapper {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.owner_testimonials .single-post-wrapper .img-holder {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.testimonial-content {
+		padding: 20px;
+		text-align: center;
+		width: 100%;
+	}
+	.owner_testimonials .client-name {
+		display: block;
+		text-align: center;
+		padding: 0;
+		position: relative;
+		top: -20px;
+	}
+	.owner_testimonials .single-post-wrapper {
+		padding: 30px 0;
+	}
+	.testimonial-content::before {
+		display: none;
+	}
+
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 600px) {
+
+	.mt-slider-btn-wrap {
+		display: block;
+	}
+	.top-left-holder .top-info {
+		float: none;
+		text-align: center;
+		margin: 4px 0;
+		display: block;
+	}
+	.social-icons-holder {
+		float: none;
+		text-align: center;
+	}
+	.top-header-holder {
+		padding: 10px 0;
+	}
+	.top-left-holder {
+		display: block;
+	}
+	.owner-copyright-wrapper {
+		float: none;
+		text-align: center;
+	}
+	#site-footer-navigation {
+		float: none;
+		text-align: center;
+	}
+	#footer-menu {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.site-info {
+		padding: 20px 0 10px;
+	}
+}
+
+@media (max-width: 480px) {
+	.owner-slider-wrapper .slide-title {
+		font-size: 16px;
+		line-height: 30px;
+		margin: 0;
+	}
+	.owner_portfolio .single-post-wrapper .portfolio-title-wrapper .post-title {
+		font-size: 16px;
+	}
+}
